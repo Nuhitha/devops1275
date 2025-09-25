@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t registration:v1'
+                bat 'docker build -t registration:v1 .'
             }
         }
         stage('Push to Docker Hub') {
